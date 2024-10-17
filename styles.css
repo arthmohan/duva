@@ -8,7 +8,7 @@
 body {
     font-family: "Inter";
     background-color: #f8f1e5;
-    color: #333;
+    color: #031919;
     padding: 20px;
 }
 
@@ -33,7 +33,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #4f4a50;
+    color: #031919;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -46,7 +46,7 @@ form {
 
 label {
     font-size: 1.2rem;
-    color: #333;
+    color: #031919;
 }
 
 input, textarea, select, button {
