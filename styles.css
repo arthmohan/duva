@@ -63,7 +63,8 @@ input, textarea, select, button {
 }
 
 button {
-    background-color: #EA2B1F;
+    background-color: #57966f;
+    border: none;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -71,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #C82119;
+    background-color: #57966f;
 }
 
 /* Add spacing between buttons on the second page */
