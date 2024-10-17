@@ -12,14 +12,11 @@ body {
     padding: 20px;
 }
 
-
-
-header h1 {
-    font-weight: 800;
-    text-align: center;
-    font-size: 3rem;
-    color: #57966f;
-    margin-bottom: 20px;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
 .container {
