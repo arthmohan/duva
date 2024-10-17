@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Information Form - Duva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Duva</h1>
+    </header>
+    <div class="container">
+        <div class="heading"><h2>Medical Information Form</h2></div>
+        <br>
+        <form id="medicalForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="transgender">Transgender</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="bloodGroup">Blood Group:</label>
+            <input type="text" id="bloodGroup" name="bloodGroup">
+
+            <label for="medications">Medications currently using:</label>
+            <textarea id="medications" name="medications" rows="3"></textarea>
+
+            <label for="chronicConditions">Chronic medical conditions (if any):</label>
+            <textarea id="chronicConditions" name="chronicConditions" rows="3"></textarea>
+
+            <label for="emergencyContactName">Emergency Contact Name:</label>
+            <input type="text" id="emergencyContactName" name="emergencyContactName">
+
+            <label for="emergencyContactPhone">Emergency Contact Phone:</label>
+            <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone">
+
+            <label for="allergies">Any known allergies:</label>
+            <textarea id="allergies" name="allergies" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="formScript.js"></script>
+</body>
+</html>

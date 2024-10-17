@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #333;
+    padding: 20px;
+}
+
+.heading{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #C82119;
+    border-radius: 0.5em;
+    margin: 2em;
+    padding: 1em;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+input, textarea, select, button {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #EA2B1F;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #C82119;
+}
+
+/* Add spacing between buttons on the second page */
+#exportJSON, #exportCSV, #clearAndRestart {
+    margin-top: 20px; /* Add space between the buttons */
+}
+
+/* Spacing for QR Code section */
+#qrSection {
+    margin-top: 40px; /* Add space between buttons and QR code */
+}
+
+#qrSection h2 {
+    margin-bottom: 20px; /* Space between heading and canvas */
+}
+
+#downloadQR, #downloadFile {
+    margin-top: 20px; /* Space between QR code and the download button */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    input, textarea, select, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #exportJSON, #exportCSV, #clearAndRestart {
+        margin-top: 15px; /* Smaller spacing for mobile */
+    }
+
+    #qrSection {
+        margin-top: 30px;
+    }
+}

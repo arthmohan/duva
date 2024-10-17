@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Export Format - Duva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Duva</h1>
+    </header>
+    <div class="container">
+        <h2>Select Export Format</h2>
+        <button id="exportJSON">Export as JSON</button>
+
+        <div id="qrSection" style="display: none;">
+            <h2>Download QR Code</h2>
+            <canvas id="qrcode"></canvas>
+            <button id="downloadQR">Download QR Code</button>
+        </div>
+
+        <button id="downloadFile" style="display: none;">Download JSON File</button>
+
+        <!-- Clear and Restart Button -->
+        <button id="clearAndRestart" style="margin-top: 20px;">Clear and Restart</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="formatScript.js"></script>
+</body>
+</html>
